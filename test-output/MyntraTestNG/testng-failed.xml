@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [MyntraTestNG]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="edge"/>
+  <test name="Test1">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ajio.AjioBeauty"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test name="Test2">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.ajio.AjioBeauty"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.ajio.AjioBeauty">
+        <methods>
+          <include name="skateBoarding"/>
+          <include name="beforSuite"/>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="launchUrl"/>
+          <include name="launchUrl"/>
+          <include name="After"/>
+          <include name="After"/>
+          <include name="backPage" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="Before"/>
+          <include name="Before"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.ajio.AjioBeauty -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [MyntraTestNG] -->

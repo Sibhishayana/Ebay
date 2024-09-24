@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyntraTestNG" parallel="tests" thread-count="1">
+	
+  <test  name="Test1" >
+	  <parameter name="browser" value="chrome"></parameter>
+	 <classes>
+      <class name="com.ajio.AjioBeauty"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test2" >
+	  <parameter name="browser" value="edge"></parameter>
+	 <classes>
+      <class name="com.ajio.AjioBeauty"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->
